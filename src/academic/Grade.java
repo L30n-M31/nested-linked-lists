@@ -14,7 +14,8 @@ public class Grade extends Course {
         setFinalGrade(0.0);
     } // end of default constructor
 
-    public Grade(double prelimGrade, double midtermGrade, double tentativeFinalGrade, double finalGrade) {
+    public Grade(Course course, double prelimGrade, double midtermGrade, double tentativeFinalGrade, double finalGrade) {
+        super(course.getCourseName(), course.getCourseCode(), course.getClassCode(), course.getProfessor(), course.getUnits());
         setPrelimGrade(prelimGrade);
         setMidtermGrade(midtermGrade);
         setTentativeFinalGrade(tentativeFinalGrade);

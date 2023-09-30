@@ -1,6 +1,6 @@
 package app;
 
-import mainmenu.MenuList;
+import list.NestedList;
 import ui.MenuInterface;
 import utilities.UserInput;
 
@@ -13,12 +13,8 @@ public class AcademicNavigatorApp {
     public void run() {
         UserInput input = new UserInput();
         MenuInterface UI = new MenuInterface();
-        MenuList execute = new MenuList();
+        NestedList execute = new NestedList();
         execute.initializeMenuList();
-        int index = 2;
-        execute.firstMenu(index);
-        execute.firstMenu(1);
-
 
         int selection = 0;
         int subSelection = 0;
@@ -38,6 +34,13 @@ public class AcademicNavigatorApp {
                         UI.gradeTrackerMenu();
                         subSelection = Integer.parseInt(input.read(">>> Enter among the choices above: "));
                         execute.secondMenu(subSelection);
+                    }
+                }
+                case 3 -> {
+                    while (subSelection != 6) {
+                        UI.gradeTrackerMenu();
+                        subSelection = Integer.parseInt(input.read(">>> Enter among the choices above: "));
+                        execute.thirdMenu(subSelection);
                     }
                 }
             }

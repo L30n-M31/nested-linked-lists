@@ -2,7 +2,7 @@ package ui;
 
 public class MenuInterface {
     public void mainMenu() {
-        System.out.println("===================================");
+        System.out.println("\n===================================");
         System.out.println("|        Academic Navigator       |");
         System.out.println("|   ---------------------------   |");
         System.out.println("|     1. Curriculum Checklist     |");
@@ -13,7 +13,7 @@ public class MenuInterface {
     } // end of mainMenu method
 
     public void curriculumChecklistMenu() {
-        System.out.println("---------< Curriculum Checklist >----------");
+        System.out.println("\n---------< Curriculum Checklist >----------");
         System.out.println("   1. View My Current Courses              ");
         System.out.println("   2. Add a Course                         ");
         System.out.println("   3. Remove a Course                      ");
@@ -23,7 +23,7 @@ public class MenuInterface {
     } // end of curriculumChecklistMenu method
 
     public void gradeTrackerMenu() {
-        System.out.println("------------< Grade Tracker >-------------");
+        System.out.println("\n------------< Grade Tracker >-------------");
         System.out.println("   1. View My Grades                      ");
         System.out.println("   2. Add a Grade                         ");
         System.out.println("   3. Edit a Grade                        ");
@@ -35,7 +35,7 @@ public class MenuInterface {
     } // end of gradeTrackerMenu method
 
     public void myScheduleMenu() {
-        System.out.println("--------------< My Schedule >---------------");
+        System.out.println("\n--------------< My Schedule >---------------");
         System.out.println("   1. View My Schedule                      ");
         System.out.println("   2. Add a Course to Schedule              ");
         System.out.println("   3. Remove a Course from Schedule         ");

@@ -23,6 +23,11 @@ public class Course {
         setUnits(units);
     } // end of constructor
 
+    public Course(String courseCode, String classCode) {
+        setCourseCode(courseCode);
+        setClassCode(classCode);
+    } // end of constructor
+
     public String getCourseName() {
         return courseName;
     }
