@@ -1,13 +1,12 @@
 package list;
 
 import mainmenu.CurriculumChecklist;
-import mainmenu.MySchedule;
 
 public class NestedList {
     private DoublyLinkedCircularList<DoublyLinkedCircularList<Object>> menu;
     CurriculumChecklist curriculumChecklist = new CurriculumChecklist();
-    GradeTracker gradeTracker = new GradeTracker();
-    MySchedule mySchedule = new MySchedule();
+    //GradeTracker gradeTracker = new GradeTracker();
+    //MySchedule mySchedule = new MySchedule();
 
     public void initializeMenuList() {
         menu = new DoublyLinkedCircularList<>();

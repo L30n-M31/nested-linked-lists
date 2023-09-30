@@ -13,7 +13,7 @@ public class CurriculumChecklist {
     UserInput input = new UserInput();
 
     public void viewList(DoublyLinkedCircularList<Object> list) {
-        System.out.println("------------------------------------------------------");
+        System.out.println("\n------------------------------------------------------");
         System.out.println("                   Course Checklist                    ");
         System.out.println("-------------------------------------------------------");
         System.out.printf("%-40s%-15s%-15s%-30s%-10s%n", "Course Name", "Course Code", "Class Code", "Professor",
